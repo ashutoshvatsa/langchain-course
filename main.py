@@ -1,12 +1,13 @@
 from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
+from langsmith import traceable
 
 
 load_dotenv()
 
 
-
+@traceable
 def main():
     print("Hello from langchain-course!")
 
